@@ -269,6 +269,7 @@ public class EditUser implements Command {
                 case "5":
                     if (user.getRoles().isEmpty()) {
                         user.addRole(Role.SUPER_ADMIN);
+                        return;
                     }
 
                     System.out.println(BAD_CHOICE_MESSAGE);
